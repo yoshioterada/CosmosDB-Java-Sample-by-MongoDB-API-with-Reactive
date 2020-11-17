@@ -93,6 +93,21 @@ public class MongoResource {
     }
 
     /**
+     * List Containers
+     * 
+     * curl http://localhost:8080/react-route/database/TEST_DB/container
+     * 
+     * @param database コンテナが含まれるデータベース
+     * @return コンテナの一覧
+     */
+    @Route(path = "/react-route/database/:database/container", methods = HttpMethod.GET, produces = "application/json")
+    public Uni<String> deleteContainer(@Param("database") String database) {
+        Publisher<String> listContainers = containerManage.listContainers(database);
+        // TODO String から JSON を作成する必要があり
+        return Uni.createFrom().publisher(listContainers);
+    }
+
+    /**
      * Create Item from Person
      * 
      * curl -X POST -H 'Content-Type:application/json'

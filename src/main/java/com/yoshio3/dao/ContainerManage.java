@@ -42,4 +42,14 @@ public class ContainerManage {
         MongoDatabase mongoDb = mongoClient.getDatabase(database);
         return mongoDb.getCollection(container).drop();
     }
+
+    /**
+     * List Containers
+     * 
+     * @param database コンテナのデータベース名
+     */
+    public Publisher<String> listContainers(String database) {
+        MongoDatabase mongoDb = mongoClient.getDatabase(database);
+        return mongoDb.listCollectionNames();
+    }
 }
