@@ -211,11 +211,49 @@ mvn quarkus:dev
 ## MongoDB Reactive App サンプルをローカルで動作確認をする
 
 ### DB の一覧表示
+
+```bash
+curl http://localhost:8080/react-route/database
+```
+
 ### DB の一削除
+
+```bash
+curl -X DELETE http://localhost:8080/react-route/database/TEST_DB2
+```
+
 ### コンテナの作成
+
+```bash
+http://localhost:8080/react-route/database/TEST_DB/addContainer/container
+```
+
 ### コンテナの一覧表示
+
+```bash
+curl http://localhost:8080/react-route/database/TEST_DB/container
+```
+
 ### コンテナの一削除
+
+```bash
+curl -X DELETE http://localhost:8080/react-route/database/TEST_DB/deleteContainer/container
+```
+
 ### アイテムの作成
+
+```bash
+curl -X POST -H 'Content-Type:application/json' \
+ http://localhost:8080/react-route/database/PERSON_DB/container/personmanage/item/addItem \
+ -d '{"id":"1", "firstName": "Taro", "lastName": "Yamada","age": 39}'
+```
+
 ### アイテムの一覧表示
+
+```bash
+curl http://localhost:8080/react-route/database/:database/container/:container/item
+```
+
 ### アイテムの一削除
 
+***----------TODO----------***
