@@ -26,18 +26,26 @@ git clone https://github.com/yoshioterada/CosmosDB-Java-Sample-by-MongoDB-API-wi
 ### Reactive Streams の概要
 [Reactive Streams](https://www.reactive-streams.org/)
 
+***----------TODO----------***
+
 #### Publisher
+
+***----------TODO----------***
 
 #### Subscriber
 
+***----------TODO----------***
+
 ### MongoDB Reactive Streams Java Driver
 [MongoDB Reactive Streams Java Driver](http://mongodb.github.io/mongo-java-driver/)
+
+***----------TODO----------***
 
 ### Quarkus Reactive ROUTE
 
 [Quarkus Reactive ROUTE](https://quarkus.io/guides/reactive-routes)
 
-
+***----------TODO----------***
 
 ## MongoDB Reactive App サンプルをローカルでビルドして実行する
 
@@ -45,9 +53,13 @@ git clone https://github.com/yoshioterada/CosmosDB-Java-Sample-by-MongoDB-API-wi
 mvn clean package
 ```
 
+***----------TODO----------***
+
 ```
 mvn quarkus:dev
 ```
+
+***----------TODO----------***
 
 ## MongoDB Reactive App サンプルをローカルで動作確認をする
 
