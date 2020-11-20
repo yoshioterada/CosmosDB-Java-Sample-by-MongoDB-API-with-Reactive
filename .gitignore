@@ -29,3 +29,5 @@ target
 .factorypath
 .gitattributes
 .project
+
+.DS_Store
