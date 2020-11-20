@@ -1,7 +1,7 @@
 # Quarkus 上で CosmosDB Mongo DB API を使用して Reactive アプリを App Service にデプロイする
 
 このチュートリアルでは、Quarkus 上で CosmosDB Mongo DB API の Reactive な非同期・ノンブロッキング API を使用して DB、コンテナ、Item の作成を行う Java Web アプリを作成し、App Service Linux  にデプロイする方法について説明します。  
-このチュートリアルは、Web のフロント・エンド実装で [Quarkus](https://quarkus.io/) の [Reactive ROUTE](https://quarkus.io/guides/reactive-routes) を使用し、バックエンドの Cosmos DB の操作に [MongoDB Reactive Streams Java Driver](https://mongodb.github.io/mongo-java-driver-reactivestreams/) を使用します。  
+このチュートリアルは、Web のフロント・エンド実装で [Quarkus](https://quarkus.io/) の [Reactive ROUTE](https://quarkus.io/guides/reactive-routes) を使用し、バックエンドの Cosmos DB の操作に [MongoDB Reactive Streams Java Driver](http://mongodb.github.io/mongo-java-driver/) を使用します。  
 まず、アプリケーションの動作確認をローカルの環境で行い、その後 Azure App Service にデプロイします。
 
 ## 前提条件
@@ -31,7 +31,7 @@ git clone https://github.com/yoshioterada/CosmosDB-Java-Sample-by-MongoDB-API-wi
 #### Subscriber
 
 ### MongoDB Reactive Streams Java Driver
-[MongoDB Reactive Streams Java Driver](https://mongodb.github.io/mongo-java-driver-reactivestreams/)
+[MongoDB Reactive Streams Java Driver](http://mongodb.github.io/mongo-java-driver/)
 
 ### Quarkus Reactive ROUTE
 
