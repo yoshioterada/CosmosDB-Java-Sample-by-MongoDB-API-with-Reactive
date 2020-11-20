@@ -101,7 +101,7 @@ public class MongoResource {
      * @return コンテナの一覧
      */
     @Route(path = "/react-route/database/:database/container", methods = HttpMethod.GET, produces = "application/json")
-    public Uni<String> deleteContainer(@Param("database") String database) {
+    public Uni<String> listContainer(@Param("database") String database) {
         Publisher<String> listContainers = containerManage.listContainers(database);
         // TODO String から JSON を作成する必要があり
         return Uni.createFrom().publisher(listContainers);
